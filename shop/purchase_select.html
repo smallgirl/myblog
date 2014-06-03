@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>会员</title>
+		<title>查询进货单</title>
 		<meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -20,10 +20,10 @@
 					<li >
 						<a href="counter.html">柜台</a>
 					</li>
-					<li>
+					<li class="li-active">
 						<a href="warehouse.html" >仓库</a>
 					</li>
-					<li class="li-active" >
+					<li  >
 						<a href="member.html" >会员</a>
 					</li>
 					<li>
@@ -37,19 +37,25 @@
                         <span class="icon">
                             <i class="icon-align-justify"></i>									
                         </span>
-                       <h5><a href="member.html">会员</a>&nbsp;>>&nbsp;<a href="number_detail.html">张三</a>&nbsp;>>&nbsp;详细交易记录</h5>
+                        <h5><a href="warehouse.html">仓库</a>&nbsp;>>&nbsp;查询进货单</h5>
                     </div>
                     <div class="widget-content nopadding">
                       	<form class="form-horizontal" method="post" action="#" name="number_validate" />
 
                             <div class="control-group">
-                                <label class="control-label">会员编号：</label>
-                                <label class="control-label">000001</label>
-                                <label class="control-label">会员姓名：</label>
-                                <label class="control-label">张三</label>
-                                <label class="control-label" style="width:120px">本次交易积分：</label>
-                                <label class="control-label">1000</label>
+                                <label class="control-label">开始时间：</label>
+                                <div class="controls">
+                                    <input type="text"  name="min" id="min" "/>(不填写搜索所有会员信息)
+                                </div>
                             </div>
+                            <div class="control-group">
+                                <label class="control-label">截至时间：</label>
+                                <div class="controls">
+                                    <input type="text" name="min" id="min" "/>(不填写搜索所有会员信息)
+                                </div>
+                            </div>                           
+                                &nbsp;&nbsp;&nbsp;&nbsp;<a href="#search" role="button" data-toggle="modal" class="btn btn-primary">查询</a>
+                            
                         </form>
                         <form class="form-horizontal" method="post" action="#" name="number_validate" />
                           
@@ -57,7 +63,7 @@
                             <div class="accordion-group">
                                 <div class="accordion-heading">
                                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                                       交易商品（模拟的）
+                                       查询结果（模拟的）
                                     </a>
                                 </div>
                                 <div id="collapseOne" class="accordion-body collapse in">
@@ -66,53 +72,54 @@
                                             <tr>
                                                 <td> 
                                                     <label class="checkbox inline"  style="width:110px">
-                                                         商品&nbsp;&nbsp;&nbsp;
+                                                         进货时间&nbsp;&nbsp;&nbsp;
                                                     </label>
                                                 </td>  
                                                  <td> 
                                                     <label class="checkbox inline">
-                                                         数量&nbsp;&nbsp;&nbsp;&nbsp
+                                                         进货单号&nbsp;&nbsp;&nbsp;&nbsp
+                                                    </label>
+                                                </td>   
+                                                <td> 
+                                                    <label class="checkbox inline">
+                                                         详情&nbsp;&nbsp;&nbsp;&nbsp
                                                     </label>
                                                 </td>  
                                             </tr>
                                             <tr>
                                                 <td> 
                                                     <label class="checkbox inline">
-                                                        雨伞&nbsp;&nbsp;&nbsp;
+                                                       2014-05-11
                                                     </label>
                                                 </td>  
                                                  <td> 
                                                     <label class="checkbox inline">
-                                                        20
+                                                        0000001
+                                                    </label>
+                                                </td>    
+                                                 <td> 
+                                                    <label class="checkbox inline">
+                                                       <a href="purchase_detail.html">详情</a>
                                                     </label>
                                                 </td>  
                                             </tr>
                                             <tr>
                                                 <td> 
                                                     <label class="checkbox inline">
-                                                        袜子&nbsp;&nbsp;&nbsp;
+                                                       2014-05-11
                                                     </label>
                                                 </td>  
                                                  <td> 
                                                     <label class="checkbox inline">
-                                                        20
+                                                        000002
+                                                    </label>
+                                                </td>   
+                                                <td> 
+                                                    <label class="checkbox inline">
+                                                       <a href="purchase_detail.html">详情</a>
                                                     </label>
                                                 </td>  
                                             </tr>
-                                            <tr>
-                                                <td> 
-                                                    <label class="checkbox inline">
-                                                        鞋子&nbsp;&nbsp;&nbsp;
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                        20
-                                                    </label>
-                                                </td>  
-                                            </tr>                                                                                 
-
-                                       
                                         </table>
 
                                     </div>
@@ -122,8 +129,6 @@
                         </form>
                     </div>               
 				</div>
-                
-              
             	
             </div>
 			

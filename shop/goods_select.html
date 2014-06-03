@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>会员</title>
+		<title>商品查询</title>
 		<meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -20,10 +20,10 @@
 					<li >
 						<a href="counter.html">柜台</a>
 					</li>
-					<li>
+					<li class="li-active">
 						<a href="warehouse.html" >仓库</a>
 					</li>
-					<li class="li-active" >
+					<li>
 						<a href="member.html" >会员</a>
 					</li>
 					<li>
@@ -37,19 +37,31 @@
                         <span class="icon">
                             <i class="icon-align-justify"></i>									
                         </span>
-                       <h5><a href="member.html">会员</a>&nbsp;>>&nbsp;<a href="number_detail.html">张三</a>&nbsp;>>&nbsp;详细交易记录</h5>
+                       <h5><a href="warehouse.html">仓库</a>&nbsp;>>&nbsp;查询商品</h5>
                     </div>
                     <div class="widget-content nopadding">
                       	<form class="form-horizontal" method="post" action="#" name="number_validate" />
-
-                            <div class="control-group">
-                                <label class="control-label">会员编号：</label>
-                                <label class="control-label">000001</label>
-                                <label class="control-label">会员姓名：</label>
-                                <label class="control-label">张三</label>
-                                <label class="control-label" style="width:120px">本次交易积分：</label>
-                                <label class="control-label">1000</label>
+                           <div class="control-group">
+                                <label class="control-label">商品种类：</label>
+                                <div class="controls">
+                                    <select>
+                                      <option>忽略</option>
+                                      <option>分类1</option>
+                                      <option>分类2</option
+                                      ><option>分类3</option>
+                                      <option>分类4</option>
+                                      <option>分类5</option>
+                                    </select>
+                                </div>
                             </div>
+                            <div class="control-group">
+                                <label class="control-label">商品名称：</label>
+                                <div class="controls">
+                                    <input type="text" name="min" id="min" value="不填写默认搜索所有商品"/>
+                                </div>
+                            </div>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<a href="#search" role="button" data-toggle="modal" class="btn btn-primary">查询</a>
+                            
                         </form>
                         <form class="form-horizontal" method="post" action="#" name="number_validate" />
                           
@@ -57,7 +69,7 @@
                             <div class="accordion-group">
                                 <div class="accordion-heading">
                                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                                       交易商品（模拟的）
+                                       查询结果（模拟的）
                                     </a>
                                 </div>
                                 <div id="collapseOne" class="accordion-body collapse in">
@@ -65,65 +77,45 @@
                                         <table class="table table-hover">
                                             <tr>
                                                 <td> 
-                                                    <label class="checkbox inline"  style="width:110px">
-                                                         商品&nbsp;&nbsp;&nbsp;
-                                                    </label>
-                                                </td>  
-                                                 <td> 
                                                     <label class="checkbox inline">
-                                                         数量&nbsp;&nbsp;&nbsp;&nbsp
+                                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> 雨伞&nbsp;&nbsp;&nbsp;价格：90&nbsp;&nbsp;&nbsp;&nbsp会员价格：60&nbsp;&nbsp;&nbsp;&nbsp商品积分：
                                                     </label>
-                                                </td>  
+                                                    <input type="text" name="number"  class=" input-small" value="1" />
+                                                    <label class="checkbox inline"><a href="#">删除</a></label>
+                                                    <label class="checkbox inline"><a href="#">修改</a></label>
+                                                </td>   
                                             </tr>
                                             <tr>
                                                 <td> 
                                                     <label class="checkbox inline">
-                                                        雨伞&nbsp;&nbsp;&nbsp;
+                                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> 镜子&nbsp;&nbsp;&nbsp;价格：90&nbsp;&nbsp;&nbsp;&nbsp会员价格：60&nbsp;&nbsp;&nbsp;&nbsp商品积分：
                                                     </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                        20
-                                                    </label>
-                                                </td>  
+                                                    <input type="text" name="number"  class=" input-small" value="1" />
+                                                    <label class="checkbox inline"><a href="#">删除</a></label>
+                                                    <label class="checkbox inline"><a href="#">修改</a></label>
+                                                </td>   
                                             </tr>
                                             <tr>
                                                 <td> 
                                                     <label class="checkbox inline">
-                                                        袜子&nbsp;&nbsp;&nbsp;
+                                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> 牙刷&nbsp;&nbsp;&nbsp;价格：90&nbsp;&nbsp;&nbsp;&nbsp会员价格：60&nbsp;&nbsp;&nbsp;&nbsp商品积分：
                                                     </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                        20
-                                                    </label>
-                                                </td>  
+                                                    <input type="text" name="number"  class=" input-small" value="1" />
+                                                    <label class="checkbox inline"><a href="#">删除</a></label>
+                                                    <label class="checkbox inline"><a href="#">修改</a></label>
+                                                </td>   
                                             </tr>
-                                            <tr>
-                                                <td> 
-                                                    <label class="checkbox inline">
-                                                        鞋子&nbsp;&nbsp;&nbsp;
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                        20
-                                                    </label>
-                                                </td>  
-                                            </tr>                                                                                 
-
                                        
                                         </table>
 
                                     </div>
                                 </div>
                              </div> 
+                                <a href="#"  class="btn btn-primary">多个删除</a>
                             
                         </form>
                     </div>               
 				</div>
-                
-              
             	
             </div>
 			
