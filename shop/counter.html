@@ -5,258 +5,271 @@
 		<meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<link rel="stylesheet" href="css/bootstrap.min.css" />
-		<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />		
+		
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+		
 		<link rel="stylesheet" href="css/unicorn.main.css" />	
         <link rel="stylesheet" href="css/header.css" />	
+        <script src="js/nav.js"></script>
     </head>
 	<body>
-		<div class="body">
-			<div class="nav top">
-				<ul>
-					<li >
-						<a href="index.html">首页</a>
-					</li>
-					<li class="li-active" >
-						<a href="#" >柜台</a>
-					</li>
-					<li>
-						<a href="warehouse.html" >仓库</a>
-					</li>
-					<li>
-						<a href="member.html" >会员</a>
-					</li>
-					<li>
-						<a href="#" >其他</a>
-					</li>
-				</ul>
-			</div>
-			<div style=" margin-top:100px; text-align: left; min-width:300px !important" >
-            	<div class="widget-box" >
-                    <div class="widget-title">
-                        <span class="icon">
-                            <i class="icon-align-justify"></i>									
-                        </span>
-                        <h5>会员购买商品录入</h5>
-                    </div>
-                    <div class="widget-content nopadding">
-                        <form class="form-horizontal" method="post" action="#" name="number_validate" />
-                            <div class="control-group">
-                                <label class="control-label">会员编号：</label>
-                                <div class="controls">
-                                    <input type="text" name="min" id="min" />
+		<div id="navmenu" >
+            <ul class="menu nav top">
+                <li style="margin-left:200px" ><a href="index.html">首页</a></li>
+                <li class="li-active"><a href="counter.html">柜台</a></li>
+                <li ><a href="goods_add.html">仓库</a>
+                    <ul class="sub-menu">
+                        <li ><a href="goods_add.html">添加商品</a></li>
+                        <li ><a href="goods_select.html">查询商品</a></li>
+                    </ul>
+                </li>
+                <li><a href="member_select.html">会员</a>
+                    <ul class="sub-menu">
+                        <li ><a href="member_add.html">添加会员</a></li>
+                        <li ><a href="member_select.html">查询会员</a></li>
+                    </ul>
+                </li>
+                <li id="menu-item-47"><a href="#">销售</a></li>
+                 <li><a href="purchase_add.html">账单</a>
+                    <ul class="sub-menu">
+                        <li ><a href="purchase_add.html">添加进货单</a></li>
+                        <li ><a href="purchase_select.html">查询进货单</a></li>
+                        <li ><a href="owe_add.html">添加欠货单</a></li>
+                        <li ><a href="owe_select.html">查询欠货单</a></li>
+                    </ul>
+                </li>
+                 <li id="menu-item-47"><a href="#">工具</a></li>
+                <li id="menu-item-47"><a href="#">退出</a></li>                                      
+            </ul>
+        </div>
+		<div class="content">
+			
+        <div style=" margin-top:100px; text-align: left; min-width:300px !important" >
+                    
+            <div class="widget-box" >
+                <div class="widget-title">
+                    <span class="icon">
+                        <i class="icon-plus-sign"></i>									
+                    </span>
+                    <h5>会员购买商品录入</h5>
+                </div>
+                <div class="widget-content nopadding">
+                    <form class="form-horizontal" method="post" action="#" name="number_validate" />
+                        <div class="control-group">
+                            <label class="control-label">会员编号：</label>
+                            <div class="controls">
+                                <input type="text"  class="input-a" id="min" />
+                            </div>
+                        </div>
+                        <label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;选择购买物品：</label>
+                        <!-- 收缩div 生活用品-->
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                                   生活用品
+                                </a>
+                            </div>
+                            <div id="collapseOne" class="accordion-body collapse in">
+                                <div class="accordion-inner"> 
+                                    <table class="table table-hover">
+                                        <tr>
+                                            <td> 
+                                                <label class="checkbox inline">
+                                                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 雨伞&nbsp;&nbsp;&nbsp;价格：90&nbsp;&nbsp;&nbsp;&nbsp会员价格：60&nbsp;&nbsp;&nbsp;&nbsp购买数量：
+                                                </label>
+                                                <input type="text" name="number"  class=" input-small" value="1" />
+                                            </td>   
+                                        </tr>
+                                        <tr>
+                                            <td> 
+                                                <label class="checkbox inline">
+                                                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 镜子&nbsp;&nbsp;&nbsp;价格：90&nbsp;&nbsp;&nbsp;&nbsp会员价格：60&nbsp;&nbsp;&nbsp;&nbsp购买数量：
+                                                </label>
+                                                <input type="text" name="number"  class=" input-small" value="1" />
+                                            </td>   
+                                        </tr>
+                                        <tr>
+                                            <td> 
+                                                <label class="checkbox inline">
+                                                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 牙刷&nbsp;&nbsp;&nbsp;价格：90&nbsp;&nbsp;&nbsp;&nbsp会员价格：60&nbsp;&nbsp;&nbsp;&nbsp购买数量：
+                                                </label>
+                                                <input type="text" name="number"  class=" input-small" value="1" />
+                                            </td>   
+                                        </tr>
+                                   
+                                    </table>
+
                                 </div>
                             </div>
-                            <label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;选择购买物品：</label>
-                            <!-- 收缩div 生活用品-->
-                            <div class="accordion-group">
-                                <div class="accordion-heading">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                                       生活用品
-                                    </a>
-                                </div>
-                                <div id="collapseOne" class="accordion-body collapse in">
-                                    <div class="accordion-inner"> 
-                                        <table class="table table-hover">
-                                            <tr>
-                                                <td> 
-                                                    <label class="checkbox inline">
-                                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> 雨伞&nbsp;&nbsp;&nbsp;价格：90&nbsp;&nbsp;&nbsp;&nbsp会员价格：60&nbsp;&nbsp;&nbsp;&nbsp购买数量：
-                                                    </label>
-                                                    <input type="text" name="number"  class=" input-small" value="1" />
-                                                </td>   
-                                            </tr>
-                                            <tr>
-                                                <td> 
-                                                    <label class="checkbox inline">
-                                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> 镜子&nbsp;&nbsp;&nbsp;价格：90&nbsp;&nbsp;&nbsp;&nbsp会员价格：60&nbsp;&nbsp;&nbsp;&nbsp购买数量：
-                                                    </label>
-                                                    <input type="text" name="number"  class=" input-small" value="1" />
-                                                </td>   
-                                            </tr>
-                                            <tr>
-                                                <td> 
-                                                    <label class="checkbox inline">
-                                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> 牙刷&nbsp;&nbsp;&nbsp;价格：90&nbsp;&nbsp;&nbsp;&nbsp会员价格：60&nbsp;&nbsp;&nbsp;&nbsp购买数量：
-                                                    </label>
-                                                    <input type="text" name="number"  class=" input-small" value="1" />
-                                                </td>   
-                                            </tr>
-                                       
-                                        </table>
+                         </div>
+                         <!-- 收缩div 生活食品-->
+                         <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                                   食品
+                                </a>
+                            </div>
+                            <div id="collapseTwo" class="accordion-body collapse">
+                                <div class="accordion-inner"> 
+                                    <table class="table table-hover">
+                                        <tr>
+                                            <td> 
+                                                <label class="checkbox inline">
+                                                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 饼干&nbsp;&nbsp;&nbsp;价格：90&nbsp;&nbsp;&nbsp;&nbsp会员价格：60&nbsp;&nbsp;&nbsp;&nbsp购买数量：
+                                                </label>
+                                                <input type="text" name="number"  class=" input-small" value="1" />
+                                            </td>   
+                                        </tr>
+                                        <tr>
+                                            <td> 
+                                                <label class="checkbox inline">
+                                                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 啤酒&nbsp;&nbsp;&nbsp;价格：90&nbsp;&nbsp;&nbsp;&nbsp会员价格：60&nbsp;&nbsp;&nbsp;&nbsp购买数量：
+                                                </label>
+                                                <input type="text" name="number"  class=" input-small" value="1" />
+                                            </td>   
+                                        </tr>
+                                        <tr>
+                                            <td> 
+                                                <label class="checkbox inline">
+                                                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 花生&nbsp;&nbsp;&nbsp;价格：90&nbsp;&nbsp;&nbsp;&nbsp会员价格：60&nbsp;&nbsp;&nbsp;&nbsp购买数量：
+                                                </label>
+                                                <input type="text" name="number"  class=" input-small" value="1" />
+                                            </td>   
+                                        </tr>
+                                   
+                                    </table>
 
-                                    </div>
                                 </div>
-                             </div>
-                             <!-- 收缩div 生活食品-->
-                             <div class="accordion-group">
-                                <div class="accordion-heading">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                                       食品
-                                    </a>
-                                </div>
-                                <div id="collapseTwo" class="accordion-body collapse">
-                                    <div class="accordion-inner"> 
-                                        <table class="table table-hover">
-                                            <tr>
-                                                <td> 
-                                                    <label class="checkbox inline">
-                                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> 饼干&nbsp;&nbsp;&nbsp;价格：90&nbsp;&nbsp;&nbsp;&nbsp会员价格：60&nbsp;&nbsp;&nbsp;&nbsp购买数量：
-                                                    </label>
-                                                    <input type="text" name="number"  class=" input-small" value="1" />
-                                                </td>   
-                                            </tr>
-                                            <tr>
-                                                <td> 
-                                                    <label class="checkbox inline">
-                                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> 啤酒&nbsp;&nbsp;&nbsp;价格：90&nbsp;&nbsp;&nbsp;&nbsp会员价格：60&nbsp;&nbsp;&nbsp;&nbsp购买数量：
-                                                    </label>
-                                                    <input type="text" name="number"  class=" input-small" value="1" />
-                                                </td>   
-                                            </tr>
-                                            <tr>
-                                                <td> 
-                                                    <label class="checkbox inline">
-                                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> 花生&nbsp;&nbsp;&nbsp;价格：90&nbsp;&nbsp;&nbsp;&nbsp会员价格：60&nbsp;&nbsp;&nbsp;&nbsp购买数量：
-                                                    </label>
-                                                    <input type="text" name="number"  class=" input-small" value="1" />
-                                                </td>   
-                                            </tr>
-                                       
-                                        </table>
+                            </div>
+                         </div>
+                         <!-- 收缩div 生活用品-->
+                         <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+                                   未分类1
+                                </a>
+                            </div>
+                            <div id="collapseThree" class="accordion-body collapse">
+                                <div class="accordion-inner"> 
+                                    <table class="table table-hover">
+                                        <tr>
+                                            <td> 
+                                                <label class="checkbox inline">
+                                                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 饼干&nbsp;&nbsp;&nbsp;价格：90&nbsp;&nbsp;&nbsp;&nbsp会员价格：60&nbsp;&nbsp;&nbsp;&nbsp购买数量：
+                                                </label>
+                                                <input type="text" name="number"  class=" input-small" value="1" />
+                                            </td>   
+                                        </tr>
+                                        <tr>
+                                            <td> 
+                                                <label class="checkbox inline">
+                                                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 啤酒&nbsp;&nbsp;&nbsp;价格：90&nbsp;&nbsp;&nbsp;&nbsp会员价格：60&nbsp;&nbsp;&nbsp;&nbsp购买数量：
+                                                </label>
+                                                <input type="text" name="number"  class=" input-small" value="1" />
+                                            </td>   
+                                        </tr>
+                                        <tr>
+                                            <td> 
+                                                <label class="checkbox inline">
+                                                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 花生&nbsp;&nbsp;&nbsp;价格：90&nbsp;&nbsp;&nbsp;&nbsp会员价格：60&nbsp;&nbsp;&nbsp;&nbsp购买数量：
+                                                </label>
+                                                <input type="text" name="number"  class=" input-small" value="1" />
+                                            </td>   
+                                        </tr>
+                                   
+                                    </table>
 
-                                    </div>
                                 </div>
-                             </div>
-                             <!-- 收缩div 生活用品-->
-                             <div class="accordion-group">
-                                <div class="accordion-heading">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-                                       未分类1
-                                    </a>
-                                </div>
-                                <div id="collapseThree" class="accordion-body collapse">
-                                    <div class="accordion-inner"> 
-                                        <table class="table table-hover">
-                                            <tr>
-                                                <td> 
-                                                    <label class="checkbox inline">
-                                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> 饼干&nbsp;&nbsp;&nbsp;价格：90&nbsp;&nbsp;&nbsp;&nbsp会员价格：60&nbsp;&nbsp;&nbsp;&nbsp购买数量：
-                                                    </label>
-                                                    <input type="text" name="number"  class=" input-small" value="1" />
-                                                </td>   
-                                            </tr>
-                                            <tr>
-                                                <td> 
-                                                    <label class="checkbox inline">
-                                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> 啤酒&nbsp;&nbsp;&nbsp;价格：90&nbsp;&nbsp;&nbsp;&nbsp会员价格：60&nbsp;&nbsp;&nbsp;&nbsp购买数量：
-                                                    </label>
-                                                    <input type="text" name="number"  class=" input-small" value="1" />
-                                                </td>   
-                                            </tr>
-                                            <tr>
-                                                <td> 
-                                                    <label class="checkbox inline">
-                                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> 花生&nbsp;&nbsp;&nbsp;价格：90&nbsp;&nbsp;&nbsp;&nbsp会员价格：60&nbsp;&nbsp;&nbsp;&nbsp购买数量：
-                                                    </label>
-                                                    <input type="text" name="number"  class=" input-small" value="1" />
-                                                </td>   
-                                            </tr>
-                                       
-                                        </table>
+                            </div>
+                         </div>
+                          <!-- 收缩div 生活用品-->
+                         <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
+                                    未分类2
+                                </a>
+                            </div>
+                            <div id="collapseFour" class="accordion-body collapse">
+                                <div class="accordion-inner"> 
+                                    <table class="table table-hover">
+                                        <tr>
+                                            <td> 
+                                                <label class="checkbox inline">
+                                                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 饼干&nbsp;&nbsp;&nbsp;价格：90&nbsp;&nbsp;&nbsp;&nbsp会员价格：60&nbsp;&nbsp;&nbsp;&nbsp购买数量：
+                                                </label>
+                                                <input type="text" name="number"  class=" input-small" value="1" />
+                                            </td>   
+                                        </tr>
+                                        <tr>
+                                            <td> 
+                                                <label class="checkbox inline">
+                                                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 啤酒&nbsp;&nbsp;&nbsp;价格：90&nbsp;&nbsp;&nbsp;&nbsp会员价格：60&nbsp;&nbsp;&nbsp;&nbsp购买数量：
+                                                </label>
+                                                <input type="text" name="number"  class=" input-small" value="1" />
+                                            </td>   
+                                        </tr>
+                                        <tr>
+                                            <td> 
+                                                <label class="checkbox inline">
+                                                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 花生&nbsp;&nbsp;&nbsp;价格：90&nbsp;&nbsp;&nbsp;&nbsp会员价格：60&nbsp;&nbsp;&nbsp;&nbsp购买数量：
+                                                </label>
+                                                <input type="text" name="number"  class=" input-small" value="1" />
+                                            </td>   
+                                        </tr>
+                                   
+                                    </table>
 
-                                    </div>
                                 </div>
-                             </div>
-                              <!-- 收缩div 生活用品-->
-                             <div class="accordion-group">
-                                <div class="accordion-heading">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
-                                        未分类2
-                                    </a>
-                                </div>
-                                <div id="collapseFour" class="accordion-body collapse">
-                                    <div class="accordion-inner"> 
-                                        <table class="table table-hover">
-                                            <tr>
-                                                <td> 
-                                                    <label class="checkbox inline">
-                                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> 饼干&nbsp;&nbsp;&nbsp;价格：90&nbsp;&nbsp;&nbsp;&nbsp会员价格：60&nbsp;&nbsp;&nbsp;&nbsp购买数量：
-                                                    </label>
-                                                    <input type="text" name="number"  class=" input-small" value="1" />
-                                                </td>   
-                                            </tr>
-                                            <tr>
-                                                <td> 
-                                                    <label class="checkbox inline">
-                                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> 啤酒&nbsp;&nbsp;&nbsp;价格：90&nbsp;&nbsp;&nbsp;&nbsp会员价格：60&nbsp;&nbsp;&nbsp;&nbsp购买数量：
-                                                    </label>
-                                                    <input type="text" name="number"  class=" input-small" value="1" />
-                                                </td>   
-                                            </tr>
-                                            <tr>
-                                                <td> 
-                                                    <label class="checkbox inline">
-                                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> 花生&nbsp;&nbsp;&nbsp;价格：90&nbsp;&nbsp;&nbsp;&nbsp会员价格：60&nbsp;&nbsp;&nbsp;&nbsp购买数量：
-                                                    </label>
-                                                    <input type="text" name="number"  class=" input-small" value="1" />
-                                                </td>   
-                                            </tr>
-                                       
-                                        </table>
+                            </div>
+                         </div>                                   
+                         <!-- 收缩div 生活用品-->
+                         <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">
+                                   未分类3
+                                </a>
+                            </div>
+                            <div id="collapseFive" class="accordion-body collapse">
+                                <div class="accordion-inner"> 
+                                    <table class="table table-hover">
+                                        <tr>
+                                            <td> 
+                                                <label class="checkbox inline">
+                                                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 饼干&nbsp;&nbsp;&nbsp;价格：90&nbsp;&nbsp;&nbsp;&nbsp会员价格：60&nbsp;&nbsp;&nbsp;&nbsp购买数量：
+                                                </label>
+                                                <input type="text" name="number"  class=" input-small" value="1" />
+                                            </td>   
+                                        </tr>
+                                        <tr>
+                                            <td> 
+                                                <label class="checkbox inline">
+                                                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 啤酒&nbsp;&nbsp;&nbsp;价格：90&nbsp;&nbsp;&nbsp;&nbsp会员价格：60&nbsp;&nbsp;&nbsp;&nbsp购买数量：
+                                                </label>
+                                                <input type="text" name="number"  class=" input-small" value="1" />
+                                            </td>   
+                                        </tr>
+                                        <tr>
+                                            <td> 
+                                                <label class="checkbox inline">
+                                                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 花生&nbsp;&nbsp;&nbsp;价格：90&nbsp;&nbsp;&nbsp;&nbsp会员价格：60&nbsp;&nbsp;&nbsp;&nbsp购买数量：
+                                                </label>
+                                                <input type="text" name="number"  class=" input-small" value="1" />
+                                            </td>   
+                                        </tr>
+                                   
+                                    </table>
 
-                                    </div>
                                 </div>
-                             </div>                                   
-                             <!-- 收缩div 生活用品-->
-                             <div class="accordion-group">
-                                <div class="accordion-heading">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">
-                                       未分类3
-                                    </a>
-                                </div>
-                                <div id="collapseFive" class="accordion-body collapse">
-                                    <div class="accordion-inner"> 
-                                        <table class="table table-hover">
-                                            <tr>
-                                                <td> 
-                                                    <label class="checkbox inline">
-                                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> 饼干&nbsp;&nbsp;&nbsp;价格：90&nbsp;&nbsp;&nbsp;&nbsp会员价格：60&nbsp;&nbsp;&nbsp;&nbsp购买数量：
-                                                    </label>
-                                                    <input type="text" name="number"  class=" input-small" value="1" />
-                                                </td>   
-                                            </tr>
-                                            <tr>
-                                                <td> 
-                                                    <label class="checkbox inline">
-                                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> 啤酒&nbsp;&nbsp;&nbsp;价格：90&nbsp;&nbsp;&nbsp;&nbsp会员价格：60&nbsp;&nbsp;&nbsp;&nbsp购买数量：
-                                                    </label>
-                                                    <input type="text" name="number"  class=" input-small" value="1" />
-                                                </td>   
-                                            </tr>
-                                            <tr>
-                                                <td> 
-                                                    <label class="checkbox inline">
-                                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> 花生&nbsp;&nbsp;&nbsp;价格：90&nbsp;&nbsp;&nbsp;&nbsp会员价格：60&nbsp;&nbsp;&nbsp;&nbsp购买数量：
-                                                    </label>
-                                                    <input type="text" name="number"  class=" input-small" value="1" />
-                                                </td>   
-                                            </tr>
-                                       
-                                        </table>
-
-                                    </div>
-                                </div>
-                             </div>                                               
-                 
-                                <a href="counter_confirm.html"  class="btn btn-primary">确认结算</a>
-                            
-                        </form>
-                    </div>               
-				</div>
+                            </div>
+                         </div>                                               
+             
+                            <a href="counter_confirm.html"  class="btn btn-primary">确认结算</a>
+                        
+                    </form>
+                </div>               
             </div>
-			
-		</div>
+        </div>
+	</div>
         <script src="js/jquery.min.js"></script>        
         <script src="js/bootstrap.min.js"></script>
 	</body>

@@ -1,48 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>首页</title>
-		<meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<link rel="stylesheet" href="css/bootstrap.min.css" />
-        <link rel="stylesheet" href="css/header.css" />
-		<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />		
-		<link rel="stylesheet" href="css/unicorn.main.css" />		
-	
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>超市销售系统</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap3.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css" />	
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/nav.js"></script>
+    <link href="css/carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Docs master nav -->
+    <div id="navmenu" >
+        <ul class="menu nav top">
+            <li style="margin-left:200px" class="li-active"><a href="index.html">首页</a></li>
+            <li ><a href="counter.html">柜台</a></li>
+            <li ><a href="goods_add.html">仓库</a>
+                <ul class="sub-menu">
+                    <li ><a href="goods_add.html">添加商品</a></li>
+                    <li ><a href="goods_select.html">查询商品</a></li>
+                </ul>
+            </li>
+            <li><a href="member_select.html">会员</a>
+                <ul class="sub-menu">
+                    <li ><a href="member_add.html">添加会员</a></li>
+                    <li ><a href="member_select.html">查询会员</a></li>
+                </ul>
+            </li>
+            <li id="menu-item-47"><a href="#">销售</a></li>
+             <li><a href="purchase_add.html">账单</a>
+                <ul class="sub-menu">
+					<li ><a href="purchase_add.html">添加进货单</a></li>
+					<li ><a href="purchase_select.html">查询进货单</a></li>
+					<li ><a href="owe_add.html">添加欠货单</a></li>
+					<li ><a href="owe_select.html">查询欠货单</a></li>
+                </ul>
+            </li>
+             <li id="menu-item-47"><a href="#">工具</a></li>
+            <li id="menu-item-47"><a href="#">退出</a></li>                                      
+        </ul>
+    </div>
+    <!-- Docs page layout --> 
+    <div class="jumbotron" id="content" style="margin-top:-5px">
+      <div class="container">
+        <h1>销售管理中心</h1>
+        <p>轻松管理您超市</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h2>柜台</h2>
+          <p>轻松录入每次交易记录。 </p>
+          <p><a class="btn btn-success" href="#" role="button">进入 &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>仓库</h2>
+          <p>管理您的进货信息和上架商品。</p>
+          <p><a class="btn btn-success" href="admin-bank-show.html" role="button">进入 &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>会员管理</h2>
+          <p>快速方便维护您的会员信息。 </p>
+          <p><a class="btn btn-success" href="admin-knowledge.html" role="button">进入 &raquo;</a></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <h2>销售记录</h2>
+          <p>方便查询每一笔订单记录。 </p>
+          <p><a class="btn btn-success" href="admin-product.html" role="button">进入 &raquo;</a></p>
+       </div>
+       <div class="col-md-4">
+          <h2>账单</h2>
+          <p>管理进货单与欠货单。 </p>
+          <p><a class="btn btn-success" href="admin-knowledge.html" role="button">进入 &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>工具</h2>
+          <p>修改个人信息及小工具</p>
+          <p><a class="btn btn-success" href="admin-message.html" role="button">进入 &raquo;</a></p>
+        </div>
+      </div>
+    </div>
   
-    </head>
-	<body>
-		
-			<div class="body">
-          
-			<div class="nav top">
-				<ul>
-					<li class="li-active">
-						<a href="#" >首页</a>
-					</li>
-					<li  >
-						<a href="counter.html">柜台</a>
-					</li>
-					<li>
-						<a  href="warehouse.html"  >仓库</a>
-					</li>
-					<li>
-						<a href="member.html" >会员</a>
-					</li>
-					<li>
-						<a href="#" >其他</a>
-					</li>
-				</ul>
-			</div>
-			<div style=" margin-top:100px; text-align: left; min-width:300px !important" >
-           
-            	暂无制作
-            </div>
-			
-		</div>
-        <script src="js/jquery.min.js"></script>        
-        <script src="js/bootstrap.min.js"></script>
-	</body>
-     
+    <hr>
+
+    <!-- Footer
+    ================================================== -->
+    <div class="container">  
+    <footer>
+        <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-2"></div>
+        </div>
+        <p class="pull-right"><a href="#">回到顶部</a></p>
+        <p>&copy; 2014 销售系统</p>
+      </footer>
+    </div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/dropdown-hover.js"></script>
+  </body>
 </html>
