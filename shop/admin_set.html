@@ -38,13 +38,13 @@
                         <li ><a href="owe_select.html">查询欠货单</a></li>
                     </ul>
                 </li>
-                 <li id="menu-item-47"><a href="tool.html">工具</a></li>
+                <li ><a href="tool.html">工具</a></li>
                 <li><a href="#">退出</a>
                     <ul class="sub-menu">
                         <li ><a href="#">安全退出</a></li>
                         <li ><a href="admin_set.html">修改密码</a></li>
                     </ul>
-                </li>                                      
+                </li>                                 
             </ul>
         </div>
 		<div class="content">    			
@@ -52,8 +52,8 @@
            <div class="bs-docs-example">
             <div class="tabbable">
               <ul class="nav nav-tabs">
-                <li class="active"><a href="#lA" data-toggle="tab">添加会员</a></li>
-                <li><a href="member_select.html" >查询会员</a></li>
+                <li class="active"><a href="#lA" data-toggle="tab">修改密码</a></li>
+                <li><a  href="#lB" data-toggle="tab" >重置邮箱</a></li>
               </ul>
               <div class="tab-content">
                 <div class="tab-pane active" id="lA">
@@ -62,40 +62,75 @@
                         <span class="icon">
                             <i class="icon-user"></i>									
                         </span>
-                        <h5>添加会员</h5>
+                        <h5>修改密码</h5>
                     </div>
                     <br>
                     <div class="control-group" style="margin-left:35px">
-                        <label class="control-label">信息录入：</label>
+                        <label class="control-label">修改密码：</label>
                     </div>
                     <div class="widget-content nopadding">
                         <form class="form-horizontal" method="post" action="#" name="number_validate" />
                            
                             <div class="control-group">
-                                <label class="control-label">会员编号：</label>
+                                <label class="control-label">新密码：</label>
                                 <div class="controls">
                                     <input type="text" name="min" id="min" />
                                 </div>
                             </div>
                             <div class="control-group">
-                                <label class="control-label">会员姓名：</label>
+                                <label class="control-label">重复新密码：</label>
                                 <div class="controls">
                                     <input type="text" name="min" id="min" />
                                 </div>
                             </div>
                             <div class="control-group">
-                                <label class="control-label">所在地区：</label>
+                                <label class="control-label">原始密码：</label>
                                 <div class="controls">
                                     <input type="text" name="min" id="min" />
                                 </div>
-                            </div>                                                                                                 &nbsp;&nbsp;&nbsp;&nbsp;<a href="#search" role="button" data-toggle="modal" class="btn btn-primary">确认添加</a>
+                            </div>                                                                                                 &nbsp;&nbsp;&nbsp;&nbsp;<a href="#search" role="button" data-toggle="modal" class="btn btn-primary">确认修改</a>
                             
                         </form>
                     </div>               
                 </div>
                 </div>
                 <div class="tab-pane" id="lB">
-                  <p>查询会员</p>
+                   <div class="widget-box"  >
+                    <div class="widget-title">
+                        <span class="icon">
+                            <i class="icon-user"></i>									
+                        </span>
+                        <h5>修改邮箱</h5>
+                    </div>
+                    <br>
+                    <div class="control-group" style="margin-left:35px">
+                        <label class="control-label">修改邮箱：</label>
+                    </div>
+                    <div class="widget-content nopadding">
+                        <form class="form-horizontal" method="post" action="#" name="number_validate" />
+                           
+                            <div class="control-group">
+                                <label class="control-label">新邮箱：</label>
+                                <div class="controls">
+                                    <input type="text" name="min" id="min" />
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">重复新邮箱：</label>
+                                <div class="controls">
+                                    <input type="text" name="min" id="min" />
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">原始邮箱：</label>
+                                <div class="controls">
+                                    <input type="text" name="min" id="min" />
+                                </div>
+                            </div>                                                                                                 &nbsp;&nbsp;&nbsp;&nbsp;<a href="#search" role="button" data-toggle="modal" class="btn btn-primary">确认修改</a>
+                            
+                        </form>
+                    </div>               
+                </div>
                 </div>
               </div>
             </div> <!-- /tabbable -->
