@@ -16,14 +16,14 @@
 		<div id="navmenu" >
             <ul class="menu nav top">
                 <li style="margin-left:200px" ><a href="index.html">首页</a></li>
-                <li class="li-active"><a href="counter.html">柜台</a></li>
+                <li ><a href="counter.html">柜台</a></li>
                 <li ><a href="goods_add.html">仓库</a>
                     <ul class="sub-menu">
                         <li ><a href="goods_add.html">添加商品</a></li>
                         <li ><a href="goods_select.html">查询商品</a></li>
                     </ul>
                 </li>
-                <li><a href="member_select.html">会员</a>
+                <li class="li-active"><a href="member_select.html">会员</a>
                     <ul class="sub-menu">
                         <li ><a href="member_add.html">添加会员</a></li>
                         <li ><a href="member_select.html">查询会员</a></li>
@@ -43,227 +43,236 @@
             </ul>
         </div>
 		<div class="content">    	
-			<div style=" margin-top:100px; text-align: left; min-width:300px !important" >
-            <div class="widget-box" >
-                    <div class="widget-title">
-                        <span class="icon">
-                            <i class="icon-align-justify"></i>									
-                        </span>
-                       <h5>会员</h5>
-                    </div>
-                    <div class="widget-content nopadding">
-                      	<form class="form-horizontal" method="post" action="#" name="number_validate" />
-
-                            <div class="control-group">
-                                <label class="control-label">会员编号：</label>
-                                <div class="controls">
-                                    <input type="text"  name="min" id="min" />(*非必要信息)
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label">会员姓名：</label>
-                                <div class="controls">
-                                    <input type="text" name="min" id="min" />(*非必要信息)
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label">所在地区：</label>
-                                <div class="controls">
-                                    <input type="text" name="min" id="min"/>(*非必要信息)
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label">查询类型：</label>
-                                <div class="controls">
-                                    <label class="radio inline">
-                                      <input type="radio" name="optionsRadios" checked="true" id="optionsRadios2" value="option2">
-                                      按编号
-                                    </label>
-                                    <label class="radio inline">
-                                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">按姓名
-                                    </label>
-                                    <label class="radio inline">
-                                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">按地区
-                                    </label>
-                                    <label class="radio inline">
-                                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">查询所有
-                                    </label>
-
-                                </div>
-                            </div> 
-                            <div class="control-group">
-                                <label class="control-label">排序方式：</label>
-                                <div class="controls">
-                                    <label class="radio inline">
-                                      <input type="radio" name="orderBy" checked="true" id="optionsRadios2" value="option2">
-                                      按地区
-                                    </label>
-                                    <label class="radio inline">
-                                      <input type="radio" name="orderBy" id="optionsRadios2" value="option2">高积分
-                                    </label>
-                                    <label class="radio inline">
-                                      <input type="radio" name="orderBy" id="optionsRadios2" value="option2">低积分
-                                    </label>
-
-                                </div>
-                            </div>                             
-                                &nbsp;&nbsp;&nbsp;&nbsp;<a href="#search" role="button" data-toggle="modal" class="btn btn-primary">查询</a>
-                            
-                        </form>
-                        <form class="form-horizontal" method="post" action="#" name="number_validate" />
-                          
-                            <!-- 收缩div 生活用品-->
-                            <div class="accordion-group">
-                                <div class="accordion-heading">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                                       查询结果（模拟的）
-                                    </a>
-                                </div>
-                                <div id="collapseOne" class="accordion-body collapse in">
-                                    <div class="accordion-inner"> 
-                                      <table class="table table-hover">
-                                            <tr>
-                                            	<td> 
-                                                    <label class="checkbox inline">
-                                                         所在地区&nbsp;&nbsp;&nbsp;&nbsp
-                                                    </label>
-                                                </td>
-                                                <td> 
-                                                    <label class="checkbox inline"  style="width:110px">
-                                                         会员编号&nbsp;&nbsp;&nbsp;
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                         会员姓名&nbsp;&nbsp;&nbsp;&nbsp
-                                                    </label>
-                                                </td>   
-                                                <td> 
-                                                    <label class="checkbox inline">
-                                                         总共积分&nbsp;&nbsp;&nbsp;&nbsp
-                                                    </label>
-                                                </td>
-                                                <td> 
-                                                    <label class="checkbox inline">
-                                                         积分管理&nbsp;&nbsp;&nbsp;&nbsp
-                                                    </label>
-                                                </td>  
-                                                <td> 
-                                                    <label class="checkbox inline">
-                                                       交易记录
-                                                    </label>
-                                                </td> 
-                                            </tr>
-                                            <tr>
-                                                  <td> 
-                                                    <label class="checkbox inline">
-                                                       北京
-                                                    </label>
-                                                </td> 
-                                                <td> 
-                                                    <label class="checkbox inline">
-                                                       0000001
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                        张三
-                                                    </label>
-                                                </td> 
-                                                <td> 
-                                                    <label class="checkbox inline">
-                                                        500
-                                                    </label>
-                                                </td> 
-                                                <td> 
-                                                    <label class="checkbox inline">
-                                                       <a href="number_detail.html">积分管理</a>
-                                                    </label>
-                                                </td>   
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                       <a href="number_detail.html">交易记录</a>
-                                                    </label>
-                                                </td>  
-                                                
-                                            </tr>
-                                            <tr>
-                                                  <td> 
-                                                    <label class="checkbox inline">
-                                                       北京
-                                                    </label>
-                                                </td> 
-                                                <td> 
-                                                    <label class="checkbox inline">
-                                                       0000001
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                        张三
-                                                    </label>
-                                                </td> 
-                                                <td> 
-                                                    <label class="checkbox inline">
-                                                        500
-                                                    </label>
-                                                </td> 
-                                                <td> 
-                                                    <label class="checkbox inline">
-                                                       <a href="number_detail.html">积分管理</a>
-                                                    </label>
-                                                </td>   
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                       <a href="number_detail.html">交易记录</a>
-                                                    </label>
-                                                </td>  
-                                                
-                                            </tr>
-                                            <tr>
-                                                  <td> 
-                                                    <label class="checkbox inline">
-                                                       北京
-                                                    </label>
-                                                </td> 
-                                                <td> 
-                                                    <label class="checkbox inline">
-                                                       0000001
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                        张三
-                                                    </label>
-                                                </td> 
-                                                <td> 
-                                                    <label class="checkbox inline">
-                                                        500
-                                                    </label>
-                                                </td> 
-                                                <td> 
-                                                    <label class="checkbox inline">
-                                                       <a href="number_detail.html">积分管理</a>
-                                                    </label>
-                                                </td>   
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                       <a href="number_detail.html">交易记录</a>
-                                                    </label>
-                                                </td>  
-                                                
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                             </div> 
-                            
-                        </form>
-                    </div>               
-				</div>
-            	
-            </div>
-			
+			<div style=" margin-top:100px; text-align: left; min-width:300px !important" >          
+                <div class="tabbable">
+					<ul class="nav nav-tabs">
+                        <li ><a href="member_add.html" >添加会员</a></li>
+                        <li class="active"><a  href="#lA" data-toggle="tab">查询会员</a></li>                 
+                  	</ul>
+                  	<div class="tab-content">
+                    	<div class="tab-pane active" id="lA">                   
+                      		<div class="widget-box" >
+                    			<div class="widget-title">
+                                    <span class="icon">
+                                        <i class="icon-user"></i>									
+                                    </span>
+                       					<h5>查询会员</h5>
+                   				</div>
+                                <div class="widget-content nopadding">
+                                    <form class="form-horizontal" method="post" action="#" name="number_validate" />
+            
+                                        <div class="control-group">
+                                            <label class="control-label">会员编号：</label>
+                                            <div class="controls">
+                                                <input type="text"  name="min" id="min" />(*非必要信息)
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label class="control-label">会员姓名：</label>
+                                            <div class="controls">
+                                                <input type="text" name="min" id="min" />(*非必要信息)
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label class="control-label">所在地区：</label>
+                                            <div class="controls">
+                                                <input type="text" name="min" id="min"/>(*非必要信息)
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label class="control-label">查询类型：</label>
+                                            <div class="controls">
+                                                <label class="radio inline">
+                                                  <input type="radio" name="optionsRadios" checked="true" id="optionsRadios2" value="option2">
+                                                  按编号
+                                                </label>
+                                                <label class="radio inline">
+                                                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">按姓名
+                                                </label>
+                                                <label class="radio inline">
+                                                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">按地区
+                                                </label>
+                                                <label class="radio inline">
+                                                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">查询所有
+                                                </label>
+            
+                                            </div>
+                                        </div> 
+                                        <div class="control-group">
+                                            <label class="control-label">排序方式：</label>
+                                            <div class="controls">
+                                                <label class="radio inline">
+                                                  <input type="radio" name="orderBy" checked="true" id="optionsRadios2" value="option2">
+                                                  按地区
+                                                </label>
+                                                <label class="radio inline">
+                                                  <input type="radio" name="orderBy" id="optionsRadios2" value="option2">高积分
+                                                </label>
+                                                <label class="radio inline">
+                                                  <input type="radio" name="orderBy" id="optionsRadios2" value="option2">低积分
+                                                </label>
+            
+                                            </div>
+                                        </div>                             
+                                            &nbsp;&nbsp;&nbsp;&nbsp;<a href="#search" role="button" data-toggle="modal" class="btn btn-primary">查询</a>
+                                        
+                                    </form>
+                                    <form class="form-horizontal" method="post" action="#" name="number_validate" />
+                                      
+                                        <!-- 收缩div 生活用品-->
+                                        <div class="accordion-group">
+                                            <div class="accordion-heading">
+                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                                                   查询结果（模拟的）
+                                                </a>
+                                            </div>
+                                            <div id="collapseOne" class="accordion-body collapse in">
+                                                <div class="accordion-inner"> 
+                                                  <table class="table table-hover">
+                                                        <tr>
+                                                            <td> 
+                                                                <label class="checkbox inline">
+                                                                     所在地区&nbsp;&nbsp;&nbsp;&nbsp
+                                                                </label>
+                                                            </td>
+                                                            <td> 
+                                                                <label class="checkbox inline"  style="width:110px">
+                                                                     会员编号&nbsp;&nbsp;&nbsp;
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                     会员姓名&nbsp;&nbsp;&nbsp;&nbsp
+                                                                </label>
+                                                            </td>   
+                                                            <td> 
+                                                                <label class="checkbox inline">
+                                                                     总共积分&nbsp;&nbsp;&nbsp;&nbsp
+                                                                </label>
+                                                            </td>
+                                                            <td> 
+                                                                <label class="checkbox inline">
+                                                                     积分管理&nbsp;&nbsp;&nbsp;&nbsp
+                                                                </label>
+                                                            </td>  
+                                                            <td> 
+                                                                <label class="checkbox inline">
+                                                                   交易记录
+                                                                </label>
+                                                            </td> 
+                                                        </tr>
+                                                        <tr>
+                                                              <td> 
+                                                                <label class="checkbox inline">
+                                                                   北京
+                                                                </label>
+                                                            </td> 
+                                                            <td> 
+                                                                <label class="checkbox inline">
+                                                                   0000001
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                    张三
+                                                                </label>
+                                                            </td> 
+                                                            <td> 
+                                                                <label class="checkbox inline">
+                                                                    500
+                                                                </label>
+                                                            </td> 
+                                                            <td> 
+                                                                <label class="checkbox inline">
+                                                                   <a href="number_credit.html">积分管理</a>
+                                                                </label>
+                                                            </td>   
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                   <a href="number_detail.html">交易记录</a>
+                                                                </label>
+                                                            </td>  
+                                                            
+                                                        </tr>
+                                                        <tr>
+                                                              <td> 
+                                                                <label class="checkbox inline">
+                                                                   北京
+                                                                </label>
+                                                            </td> 
+                                                            <td> 
+                                                                <label class="checkbox inline">
+                                                                   0000001
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                    张三
+                                                                </label>
+                                                            </td> 
+                                                            <td> 
+                                                                <label class="checkbox inline">
+                                                                    500
+                                                                </label>
+                                                            </td> 
+                                                            <td> 
+                                                                <label class="checkbox inline">
+                                                                   <a href="number_credit.html">积分管理</a>
+                                                                </label>
+                                                            </td>   
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                   <a href="number_detail.html">交易记录</a>
+                                                                </label>
+                                                            </td>  
+                                                            
+                                                        </tr>
+                                                        <tr>
+                                                              <td> 
+                                                                <label class="checkbox inline">
+                                                                   北京
+                                                                </label>
+                                                            </td> 
+                                                            <td> 
+                                                                <label class="checkbox inline">
+                                                                   0000001
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                    张三
+                                                                </label>
+                                                            </td> 
+                                                            <td> 
+                                                                <label class="checkbox inline">
+                                                                    500
+                                                                </label>
+                                                            </td> 
+                                                            <td> 
+                                                                <label class="checkbox inline">
+                                                                   <a href="number_credit.html">积分管理</a>
+                                                                </label>
+                                                            </td>   
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                   <a href="number_detail.html">交易记录</a>
+                                                                </label>
+                                                            </td>  
+                                                            
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                         </div>      
+                                    </form>
+                                </div>               
+							</div> <!-- /tbox -->  
+                    	</div>
+                    	<div class="tab-pane" id="lB">		
+                    	</div>
+                  </div>
+                </div> <!-- /tabbable -->            	
+            </div>		
 		</div>
         <script src="js/jquery.min.js"></script>        
         <script src="js/bootstrap.min.js"></script>

@@ -16,8 +16,8 @@
 		<div id="navmenu" >
             <ul class="menu nav top">
                 <li style="margin-left:200px" ><a href="index.html">首页</a></li>
-                <li class="li-active"><a href="counter.html">柜台</a></li>
-                <li ><a href="goods_add.html">仓库</a>
+                <li ><a href="counter.html">柜台</a></li>
+                <li class="li-active"><a href="goods_add.html">仓库</a>
                     <ul class="sub-menu">
                         <li ><a href="goods_add.html">添加商品</a></li>
                         <li ><a href="goods_select.html">查询商品</a></li>
@@ -44,463 +44,478 @@
         </div>
 		<div class="content">    		
 			<div style=" margin-top:100px; text-align: left; min-width:300px !important" >
-            	<div class="widget-box" >
-                    <div class="widget-title">
-                        <span class="icon">
-                            <i class="icon-align-justify"></i>									
-                        </span>
-                        <h5><a href="warehouse.html">仓库</a>&nbsp;>>&nbsp;添加进货单</h5>
-                    </div>
-                    <div class="widget-content nopadding">
-                    	<label class="control-label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注意：如果有新增的商品，请先添加商品，才能继续添加进货单。</label><br>
-                        <form class="form-horizontal" method="post" action="#" name="number_validate" />
-                        
-                            <div class="control-group">
-                                <label class="control-label">进货编号：</label>
-                                <div class="controls">
-                                    <input type="text" name="min" id="min" />
+            	<div class="tabbable">
+					<ul class="nav nav-tabs">
+                        <li class="active"><a  href="#lA" data-toggle="tab" >添加进货单</a></li>
+                        <li><a href="purchase_select.html">查询进货单</a></li> 
+                        <li ><a href="owe_add.html" >添加欠货单</a></li>
+                        <li ><a href="owe_select.html"  >查询欠货单</a></li>                
+                  	</ul>
+                  	<div class="tab-content">
+                    	<div class="tab-pane active" id="lA">                   
+            				<div class="widget-box" >
+                                <div class="widget-title">
+                                    <span class="icon">
+                                        <i class="icon-align-justify"></i>									
+                                    </span>
+                                    <h5>添加进货单</h5>
                                 </div>
-                            </div>
-                            <label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;选择进货物品：</label>
-                            <!-- 收缩div 生活用品-->
-                            <div class="accordion-group">
-                                <div class="accordion-heading">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                                       生活用品
-                                    </a>
-                                </div>
-                                <div id="collapseOne" class="accordion-body collapse in">
-                                    <div class="accordion-inner"> 
-                                    <table class="table table-hover">
-                                            <tr>
-                                                <td> 
-                                                    <label class="checkbox inline"  style="width:110px">
-                                                         商品名称&nbsp;&nbsp;&nbsp;
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                         商品进价&nbsp;&nbsp;&nbsp;&nbsp
-                                                    </label>
-                                                </td> 
-                                                <td> 
-                                                    <label class="checkbox inline">
-                                                       商品数量&nbsp;&nbsp;&nbsp;
-                                                    </label>
-                                                </td>   
-                                            </tr>
-                                          
-                                            <tr>
-                                                <td> 
-                                                	&nbsp;&nbsp;&nbsp;
-                                                    <label class="checkbox inline">
-                                                      <input type="checkbox" id="inlineCheckbox1" value="option1"> 镜子
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                       <input type="text" name="number"  class=" input-small" value="80" />
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                       <input type="text" name="number"  class=" input-small" value="20" />
-                                                    </label>
-                                                </td> 
-                                            </tr>
-                                            <tr>
-                                                <td> 
-                                                	&nbsp;&nbsp;&nbsp;
-                                                    <label class="checkbox inline">
-                                                      <input type="checkbox" id="inlineCheckbox1" value="option1"> 镜子
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                       <input type="text" name="number"  class=" input-small" value="80" />
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                       <input type="text" name="number"  class=" input-small" value="20" />
-                                                    </label>
-                                                </td> 
-                                            </tr>
-                                            <tr>
-                                                <td> 
-                                                	&nbsp;&nbsp;&nbsp;
-                                                    <label class="checkbox inline">
-                                                      <input type="checkbox" id="inlineCheckbox1" value="option1"> 镜子
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                       <input type="text" name="number"  class=" input-small" value="80" />
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                       <input type="text" name="number"  class=" input-small" value="20" />
-                                                    </label>
-                                                </td> 
-                                            </tr>                 
-                                        </table>
-                                    </div>
-                                </div>
-                             </div>
-                             <!-- 收缩div 生活食品-->
-                             <div class="accordion-group">
-                                <div class="accordion-heading">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                                       食品
-                                    </a>
-                                </div>
-                                <div id="collapseTwo" class="accordion-body collapse">
-                                    <div class="accordion-inner"> 
-                                       <table class="table table-hover">
-                                            <tr>
-                                                <td> 
-                                                    <label class="checkbox inline"  style="width:110px">
-                                                         商品名称&nbsp;&nbsp;&nbsp;
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                         商品进价&nbsp;&nbsp;&nbsp;&nbsp
-                                                    </label>
-                                                </td> 
-                                                <td> 
-                                                    <label class="checkbox inline">
-                                                       商品数量&nbsp;&nbsp;&nbsp;
-                                                    </label>
-                                                </td>   
-                                            </tr>
-                                          
-                                            <tr>
-                                                <td> 
-                                                	&nbsp;&nbsp;&nbsp;
-                                                    <label class="checkbox inline">
-                                                      <input type="checkbox" id="inlineCheckbox1" value="option1"> 镜子
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                       <input type="text" name="number"  class=" input-small" value="80" />
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                       <input type="text" name="number"  class=" input-small" value="20" />
-                                                    </label>
-                                                </td> 
-                                            </tr>
-                                            <tr>
-                                                <td> 
-                                                	&nbsp;&nbsp;&nbsp;
-                                                    <label class="checkbox inline">
-                                                      <input type="checkbox" id="inlineCheckbox1" value="option1"> 镜子
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                       <input type="text" name="number"  class=" input-small" value="80" />
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                       <input type="text" name="number"  class=" input-small" value="20" />
-                                                    </label>
-                                                </td> 
-                                            </tr>
-                                            <tr>
-                                                <td> 
-                                                	&nbsp;&nbsp;&nbsp;
-                                                    <label class="checkbox inline">
-                                                      <input type="checkbox" id="inlineCheckbox1" value="option1"> 镜子
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                       <input type="text" name="number"  class=" input-small" value="80" />
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                       <input type="text" name="number"  class=" input-small" value="20" />
-                                                    </label>
-                                                </td> 
-                                            </tr>                 
-                                        </table>
-
-                                    </div>
-                                </div>
-                             </div>
-                             <!-- 收缩div 生活用品-->
-                             <div class="accordion-group">
-                                <div class="accordion-heading">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-                                       未分类1
-                                    </a>
-                                </div>
-                                <div id="collapseThree" class="accordion-body collapse">
-                                    <div class="accordion-inner"> 
-                                        <table class="table table-hover">
-                                            <tr>
-                                                <td> 
-                                                    <label class="checkbox inline"  style="width:110px">
-                                                         商品名称&nbsp;&nbsp;&nbsp;
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                         商品进价&nbsp;&nbsp;&nbsp;&nbsp
-                                                    </label>
-                                                </td> 
-                                                <td> 
-                                                    <label class="checkbox inline">
-                                                       商品数量&nbsp;&nbsp;&nbsp;
-                                                    </label>
-                                                </td>   
-                                            </tr>
-                                          
-                                            <tr>
-                                                <td> 
-                                                	&nbsp;&nbsp;&nbsp;
-                                                    <label class="checkbox inline">
-                                                      <input type="checkbox" id="inlineCheckbox1" value="option1"> 镜子
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                       <input type="text" name="number"  class=" input-small" value="80" />
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                       <input type="text" name="number"  class=" input-small" value="20" />
-                                                    </label>
-                                                </td> 
-                                            </tr>
-                                            <tr>
-                                                <td> 
-                                                	&nbsp;&nbsp;&nbsp;
-                                                    <label class="checkbox inline">
-                                                      <input type="checkbox" id="inlineCheckbox1" value="option1"> 镜子
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                       <input type="text" name="number"  class=" input-small" value="80" />
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                       <input type="text" name="number"  class=" input-small" value="20" />
-                                                    </label>
-                                                </td> 
-                                            </tr>
-                                            <tr>
-                                                <td> 
-                                                	&nbsp;&nbsp;&nbsp;
-                                                    <label class="checkbox inline">
-                                                      <input type="checkbox" id="inlineCheckbox1" value="option1"> 镜子
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                       <input type="text" name="number"  class=" input-small" value="80" />
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                       <input type="text" name="number"  class=" input-small" value="20" />
-                                                    </label>
-                                                </td> 
-                                            </tr>                 
-                                        </table>
-                                    </div>
-                                </div>
-                             </div>
-                              <!-- 收缩div 生活用品-->
-                             <div class="accordion-group">
-                                <div class="accordion-heading">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
-                                        未分类2
-                                    </a>
-                                </div>
-                                <div id="collapseFour" class="accordion-body collapse">
-                                    <div class="accordion-inner"> 
-                                        <table class="table table-hover">
-                                            <tr>
-                                                <td> 
-                                                    <label class="checkbox inline"  style="width:110px">
-                                                         商品名称&nbsp;&nbsp;&nbsp;
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                         商品进价&nbsp;&nbsp;&nbsp;&nbsp
-                                                    </label>
-                                                </td> 
-                                                <td> 
-                                                    <label class="checkbox inline">
-                                                       商品数量&nbsp;&nbsp;&nbsp;
-                                                    </label>
-                                                </td>   
-                                            </tr>
-                                          
-                                            <tr>
-                                                <td> 
-                                                	&nbsp;&nbsp;&nbsp;
-                                                    <label class="checkbox inline">
-                                                      <input type="checkbox" id="inlineCheckbox1" value="option1"> 镜子
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                       <input type="text" name="number"  class=" input-small" value="80" />
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                       <input type="text" name="number"  class=" input-small" value="20" />
-                                                    </label>
-                                                </td> 
-                                            </tr>
-                                            <tr>
-                                                <td> 
-                                                	&nbsp;&nbsp;&nbsp;
-                                                    <label class="checkbox inline">
-                                                      <input type="checkbox" id="inlineCheckbox1" value="option1"> 镜子
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                       <input type="text" name="number"  class=" input-small" value="80" />
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                       <input type="text" name="number"  class=" input-small" value="20" />
-                                                    </label>
-                                                </td> 
-                                            </tr>
-                                            <tr>
-                                                <td> 
-                                                	&nbsp;&nbsp;&nbsp;
-                                                    <label class="checkbox inline">
-                                                      <input type="checkbox" id="inlineCheckbox1" value="option1"> 镜子
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                       <input type="text" name="number"  class=" input-small" value="80" />
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                       <input type="text" name="number"  class=" input-small" value="20" />
-                                                    </label>
-                                                </td> 
-                                            </tr>                 
-                                        </table>
-
-                                    </div>
-                                </div>
-                             </div>                                   
-                             <!-- 收缩div 生活用品-->
-                             <div class="accordion-group">
-                                <div class="accordion-heading">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">
-                                       未分类3
-                                    </a>
-                                </div>
-                                <div id="collapseFive" class="accordion-body collapse">
-                                    <div class="accordion-inner"> 
-                                        <table class="table table-hover">
-                                            <tr>
-                                                <td> 
-                                                    <label class="checkbox inline"  style="width:110px">
-                                                         商品名称&nbsp;&nbsp;&nbsp;
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                         商品进价&nbsp;&nbsp;&nbsp;&nbsp
-                                                    </label>
-                                                </td> 
-                                                <td> 
-                                                    <label class="checkbox inline">
-                                                       商品数量&nbsp;&nbsp;&nbsp;
-                                                    </label>
-                                                </td>   
-                                            </tr>
-                                          
-                                            <tr>
-                                                <td> 
-                                                	&nbsp;&nbsp;&nbsp;
-                                                    <label class="checkbox inline">
-                                                      <input type="checkbox" id="inlineCheckbox1" value="option1"> 镜子
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                       <input type="text" name="number"  class=" input-small" value="80" />
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                       <input type="text" name="number"  class=" input-small" value="20" />
-                                                    </label>
-                                                </td> 
-                                            </tr>
-                                            <tr>
-                                                <td> 
-                                                	&nbsp;&nbsp;&nbsp;
-                                                    <label class="checkbox inline">
-                                                      <input type="checkbox" id="inlineCheckbox1" value="option1"> 镜子
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                       <input type="text" name="number"  class=" input-small" value="80" />
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                       <input type="text" name="number"  class=" input-small" value="20" />
-                                                    </label>
-                                                </td> 
-                                            </tr>
-                                            <tr>
-                                                <td> 
-                                                	&nbsp;&nbsp;&nbsp;
-                                                    <label class="checkbox inline">
-                                                      <input type="checkbox" id="inlineCheckbox1" value="option1"> 镜子
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                       <input type="text" name="number"  class=" input-small" value="80" />
-                                                    </label>
-                                                </td>  
-                                                 <td> 
-                                                    <label class="checkbox inline">
-                                                       <input type="text" name="number"  class=" input-small" value="20" />
-                                                    </label>
-                                                </td> 
-                                            </tr>                 
-                                        </table>
-                                    </div>
-                                </div>
-                             </div>
-                             <br>                                               
-                 			备注：<textarea rows="5" class="input-xxlarge"></textarea><br><br>
-                            <a href="#"  class="btn btn-primary">确认添加</a>
-                            
-                        </form>
-                    </div>               
-				</div>
+                                <div class="widget-content nopadding">
+                                    <label class="control-label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注意：如果有新增的商品，请先添加商品，才能继续添加进货单。</label><br>
+                                    <form class="form-horizontal" method="post" action="#" name="number_validate" />
+                                    
+                                        <div class="control-group">
+                                            <label class="control-label">进货编号：</label>
+                                            <div class="controls">
+                                                <input type="text" name="min" id="min" />
+                                            </div>
+                                        </div>
+                                        <label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;选择进货物品：</label>
+                                        <!-- 收缩div 生活用品-->
+                                        <div class="accordion-group">
+                                            <div class="accordion-heading">
+                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                                                   生活用品
+                                                </a>
+                                            </div>
+                                            <div id="collapseOne" class="accordion-body collapse in">
+                                                <div class="accordion-inner"> 
+                                                <table class="table table-hover">
+                                                        <tr>
+                                                            <td> 
+                                                                <label class="checkbox inline"  style="width:110px">
+                                                                     商品名称&nbsp;&nbsp;&nbsp;
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                     商品进价&nbsp;&nbsp;&nbsp;&nbsp
+                                                                </label>
+                                                            </td> 
+                                                            <td> 
+                                                                <label class="checkbox inline">
+                                                                   商品数量&nbsp;&nbsp;&nbsp;
+                                                                </label>
+                                                            </td>   
+                                                        </tr>
+                                                      
+                                                        <tr>
+                                                            <td> 
+                                                                &nbsp;&nbsp;&nbsp;
+                                                                <label class="checkbox inline">
+                                                                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 镜子
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                   <input type="text" name="number"  class=" input-small" value="80" />
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                   <input type="text" name="number"  class=" input-small" value="20" />
+                                                                </label>
+                                                            </td> 
+                                                        </tr>
+                                                        <tr>
+                                                            <td> 
+                                                                &nbsp;&nbsp;&nbsp;
+                                                                <label class="checkbox inline">
+                                                                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 镜子
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                   <input type="text" name="number"  class=" input-small" value="80" />
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                   <input type="text" name="number"  class=" input-small" value="20" />
+                                                                </label>
+                                                            </td> 
+                                                        </tr>
+                                                        <tr>
+                                                            <td> 
+                                                                &nbsp;&nbsp;&nbsp;
+                                                                <label class="checkbox inline">
+                                                                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 镜子
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                   <input type="text" name="number"  class=" input-small" value="80" />
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                   <input type="text" name="number"  class=" input-small" value="20" />
+                                                                </label>
+                                                            </td> 
+                                                        </tr>                 
+                                                    </table>
+                                                </div>
+                                            </div>
+                                         </div>
+                                         <!-- 收缩div 生活食品-->
+                                         <div class="accordion-group">
+                                            <div class="accordion-heading">
+                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                                                   食品
+                                                </a>
+                                            </div>
+                                            <div id="collapseTwo" class="accordion-body collapse">
+                                                <div class="accordion-inner"> 
+                                                   <table class="table table-hover">
+                                                        <tr>
+                                                            <td> 
+                                                                <label class="checkbox inline"  style="width:110px">
+                                                                     商品名称&nbsp;&nbsp;&nbsp;
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                     商品进价&nbsp;&nbsp;&nbsp;&nbsp
+                                                                </label>
+                                                            </td> 
+                                                            <td> 
+                                                                <label class="checkbox inline">
+                                                                   商品数量&nbsp;&nbsp;&nbsp;
+                                                                </label>
+                                                            </td>   
+                                                        </tr>
+                                                      
+                                                        <tr>
+                                                            <td> 
+                                                                &nbsp;&nbsp;&nbsp;
+                                                                <label class="checkbox inline">
+                                                                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 镜子
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                   <input type="text" name="number"  class=" input-small" value="80" />
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                   <input type="text" name="number"  class=" input-small" value="20" />
+                                                                </label>
+                                                            </td> 
+                                                        </tr>
+                                                        <tr>
+                                                            <td> 
+                                                                &nbsp;&nbsp;&nbsp;
+                                                                <label class="checkbox inline">
+                                                                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 镜子
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                   <input type="text" name="number"  class=" input-small" value="80" />
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                   <input type="text" name="number"  class=" input-small" value="20" />
+                                                                </label>
+                                                            </td> 
+                                                        </tr>
+                                                        <tr>
+                                                            <td> 
+                                                                &nbsp;&nbsp;&nbsp;
+                                                                <label class="checkbox inline">
+                                                                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 镜子
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                   <input type="text" name="number"  class=" input-small" value="80" />
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                   <input type="text" name="number"  class=" input-small" value="20" />
+                                                                </label>
+                                                            </td> 
+                                                        </tr>                 
+                                                    </table>
+            
+                                                </div>
+                                            </div>
+                                         </div>
+                                         <!-- 收缩div 生活用品-->
+                                         <div class="accordion-group">
+                                            <div class="accordion-heading">
+                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+                                                   未分类1
+                                                </a>
+                                            </div>
+                                            <div id="collapseThree" class="accordion-body collapse">
+                                                <div class="accordion-inner"> 
+                                                    <table class="table table-hover">
+                                                        <tr>
+                                                            <td> 
+                                                                <label class="checkbox inline"  style="width:110px">
+                                                                     商品名称&nbsp;&nbsp;&nbsp;
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                     商品进价&nbsp;&nbsp;&nbsp;&nbsp
+                                                                </label>
+                                                            </td> 
+                                                            <td> 
+                                                                <label class="checkbox inline">
+                                                                   商品数量&nbsp;&nbsp;&nbsp;
+                                                                </label>
+                                                            </td>   
+                                                        </tr>
+                                                      
+                                                        <tr>
+                                                            <td> 
+                                                                &nbsp;&nbsp;&nbsp;
+                                                                <label class="checkbox inline">
+                                                                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 镜子
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                   <input type="text" name="number"  class=" input-small" value="80" />
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                   <input type="text" name="number"  class=" input-small" value="20" />
+                                                                </label>
+                                                            </td> 
+                                                        </tr>
+                                                        <tr>
+                                                            <td> 
+                                                                &nbsp;&nbsp;&nbsp;
+                                                                <label class="checkbox inline">
+                                                                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 镜子
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                   <input type="text" name="number"  class=" input-small" value="80" />
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                   <input type="text" name="number"  class=" input-small" value="20" />
+                                                                </label>
+                                                            </td> 
+                                                        </tr>
+                                                        <tr>
+                                                            <td> 
+                                                                &nbsp;&nbsp;&nbsp;
+                                                                <label class="checkbox inline">
+                                                                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 镜子
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                   <input type="text" name="number"  class=" input-small" value="80" />
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                   <input type="text" name="number"  class=" input-small" value="20" />
+                                                                </label>
+                                                            </td> 
+                                                        </tr>                 
+                                                    </table>
+                                                </div>
+                                            </div>
+                                         </div>
+                                          <!-- 收缩div 生活用品-->
+                                         <div class="accordion-group">
+                                            <div class="accordion-heading">
+                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
+                                                    未分类2
+                                                </a>
+                                            </div>
+                                            <div id="collapseFour" class="accordion-body collapse">
+                                                <div class="accordion-inner"> 
+                                                    <table class="table table-hover">
+                                                        <tr>
+                                                            <td> 
+                                                                <label class="checkbox inline"  style="width:110px">
+                                                                     商品名称&nbsp;&nbsp;&nbsp;
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                     商品进价&nbsp;&nbsp;&nbsp;&nbsp
+                                                                </label>
+                                                            </td> 
+                                                            <td> 
+                                                                <label class="checkbox inline">
+                                                                   商品数量&nbsp;&nbsp;&nbsp;
+                                                                </label>
+                                                            </td>   
+                                                        </tr>
+                                                      
+                                                        <tr>
+                                                            <td> 
+                                                                &nbsp;&nbsp;&nbsp;
+                                                                <label class="checkbox inline">
+                                                                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 镜子
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                   <input type="text" name="number"  class=" input-small" value="80" />
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                   <input type="text" name="number"  class=" input-small" value="20" />
+                                                                </label>
+                                                            </td> 
+                                                        </tr>
+                                                        <tr>
+                                                            <td> 
+                                                                &nbsp;&nbsp;&nbsp;
+                                                                <label class="checkbox inline">
+                                                                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 镜子
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                   <input type="text" name="number"  class=" input-small" value="80" />
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                   <input type="text" name="number"  class=" input-small" value="20" />
+                                                                </label>
+                                                            </td> 
+                                                        </tr>
+                                                        <tr>
+                                                            <td> 
+                                                                &nbsp;&nbsp;&nbsp;
+                                                                <label class="checkbox inline">
+                                                                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 镜子
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                   <input type="text" name="number"  class=" input-small" value="80" />
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                   <input type="text" name="number"  class=" input-small" value="20" />
+                                                                </label>
+                                                            </td> 
+                                                        </tr>                 
+                                                    </table>
+            
+                                                </div>
+                                            </div>
+                                         </div>                                   
+                                         <!-- 收缩div 生活用品-->
+                                         <div class="accordion-group">
+                                            <div class="accordion-heading">
+                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">
+                                                   未分类3
+                                                </a>
+                                            </div>
+                                            <div id="collapseFive" class="accordion-body collapse">
+                                                <div class="accordion-inner"> 
+                                                    <table class="table table-hover">
+                                                        <tr>
+                                                            <td> 
+                                                                <label class="checkbox inline"  style="width:110px">
+                                                                     商品名称&nbsp;&nbsp;&nbsp;
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                     商品进价&nbsp;&nbsp;&nbsp;&nbsp
+                                                                </label>
+                                                            </td> 
+                                                            <td> 
+                                                                <label class="checkbox inline">
+                                                                   商品数量&nbsp;&nbsp;&nbsp;
+                                                                </label>
+                                                            </td>   
+                                                        </tr>
+                                                      
+                                                        <tr>
+                                                            <td> 
+                                                                &nbsp;&nbsp;&nbsp;
+                                                                <label class="checkbox inline">
+                                                                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 镜子
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                   <input type="text" name="number"  class=" input-small" value="80" />
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                   <input type="text" name="number"  class=" input-small" value="20" />
+                                                                </label>
+                                                            </td> 
+                                                        </tr>
+                                                        <tr>
+                                                            <td> 
+                                                                &nbsp;&nbsp;&nbsp;
+                                                                <label class="checkbox inline">
+                                                                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 镜子
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                   <input type="text" name="number"  class=" input-small" value="80" />
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                   <input type="text" name="number"  class=" input-small" value="20" />
+                                                                </label>
+                                                            </td> 
+                                                        </tr>
+                                                        <tr>
+                                                            <td> 
+                                                                &nbsp;&nbsp;&nbsp;
+                                                                <label class="checkbox inline">
+                                                                  <input type="checkbox" id="inlineCheckbox1" value="option1"> 镜子
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                   <input type="text" name="number"  class=" input-small" value="80" />
+                                                                </label>
+                                                            </td>  
+                                                             <td> 
+                                                                <label class="checkbox inline">
+                                                                   <input type="text" name="number"  class=" input-small" value="20" />
+                                                                </label>
+                                                            </td> 
+                                                        </tr>                 
+                                                    </table>
+                                                </div>
+                                            </div>
+                                         </div>
+                                         <br>                                               
+                                        备注：<textarea rows="5" class="input-xxlarge"></textarea><br><br>
+                                        <a href="#"  class="btn btn-primary">确认添加</a>
+                                        
+                                    </form>
+                                </div>               
+                            </div>                        	<!-- /tbox -->  
+                    	</div>
+                    	<div class="tab-pane" id="lB">		
+                    	</div>
+                  </div>
+                </div>
+            	
             </div>
 			
 		</div>

@@ -4,14 +4,6 @@
 	-moz-outline: none !important;
 }
 a{ outline:none;text-decoration:none;}
-.nav{
-	background:#0095cd;
-	border-radius:5px;
-	width: 100%;
-	z-index: 9998;
-	position: fixed;
-	left: 0px;
-}
 .top{
 	top: 0px;
 }
@@ -20,7 +12,14 @@ a{ outline:none;text-decoration:none;}
 }
 
 body {margin:0 auto;color:#131313; background-color:#fafafa; text-align:center}
-#navmenu{margin:0 auto;}
+#navmenu{margin:0 auto;
+	background:#0095cd;
+	border-radius:5px;
+	width: 100%;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+}
 #navmenu ul {float:left;margin:0;padding:0;}
 #navmenu ul li {float:left;height:45px;line-height:45px;position:relative;padding:0 0 0 2px;list-style:none;}
 #navmenu ul li a:hover{ background:#00a5cd;}
