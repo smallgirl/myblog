@@ -6,39 +6,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
-        <link rel="stylesheet" href="css/unicorn.login.css" />
+        <link rel="stylesheet" href="css/login.css" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
     <body>
         <div id="logo">
             <img src="img/logo.png" alt="" />
         </div>
         <div id="loginbox">            
-            <form id="loginform" class="form-vertical" action="index.html" />
+            <form id="loginform" class="form-vertical" action="admin_name" onsubmit="return checkLogin(this);"/>
 				<p>欢迎使用</p>
                 <div class=" input-info">
                 <div class="control-group">
                     <div class="controls">
                         <div class="input-prepend">
-                            <span class="add-on"><i class="icon-user"></i></span><input type="text" placeholder="用户名" />
+                            <span class="add-on"><i class="icon-user"></i></span><input type="text" id="admin_name" placeholder="用户名" />
                         </div>
+                        
                     </div>
                 </div>
                 </div>
                 <div class="control-group" >
                     <div class="controls">
                         <div class="input-prepend">
-                            <span class="add-on"><i class="icon-lock"></i></span><input type="password" placeholder="密码" />
+                            <span class="add-on"><i class="icon-lock"></i></span><input type="password"id="admin_psw" placeholder="密码" />
                         </div>
                     </div>
-                </div>
-                
+                </div> 
                 <div class="form-actions">
-                    <span class="pull-left"><a href="#" class="flip-link" id="to-recover">忘记密码?</a></span>
-                    <a href="index.html" role="button" data-toggle="modal" class="btn btn-primary" style="margin-left:100px">登录</a>
+                    <span class="pull-left"><a href="login.html#" class="flip-link" id="to-recover">忘记密码?</a></span>
+                    <span class="pull-right" style="margin-right:32px">
+                     <input type="submit" class="btn btn-primary" value="登录" />
+                     </span> 
                 </div>
             </form>
             <form id="recoverform" action="#" class="form-vertical" />
-				<p>Enter your e-mail address below and we will send you instructions how to recover a password.</p>
+				<p>输入您的邮箱地址</p>
                 <div class="email_address">
 				<div class="control-group">
                     <div class="controls">
@@ -48,14 +50,39 @@
                     </div>
                 </div>
                 </div>
-                <div class="form-actions">
+
+                 <div class="form-actions">
                     <span class="pull-left"><a href="#" class="flip-link" id="to-login">&lt; Back to login</a></span>
-                    <span class="pull-right"><input type="submit" class="btn btn-inverse" value="Recover" /></span>
+                    <span class="pull-right" style="margin-right:32px">
+                    	<input type="submit" class="btn btn-warning" value="发送" />
+                     </span>
                 </div>
             </form>
         </div>
         
         <script src="js/jquery.min.js"></script>  
         <script src="js/unicorn.login.js"></script> 
+        <script src="js/bootstrap.js"></script>
+            <div id="apply-event" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="change-info" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+        <h3 id="apply">申请活动</h3>
+      </div>
+      <div class="modal-body">
+        <p  id="info">活动申请已经提交，等待管理员审核中！ </p>
+      </div>
+      <div class="modal-footer">
+        <a  data-dismiss="modal" class="btn btn-primary" role="button" >确定</a>
+      </div>
+    </div>
     </body>
+        <div id="admin_error" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="myModalLabel">登陆异常！</h3>
+            </div>
+            <div class="modal-body">
+                 <p>请仔细检查用户名和密码，确认无误后再次登陆</p>
+            </div>
+        </div>
 </html>

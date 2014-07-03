@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>商品信息录入</title>
+		<meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+		
+		<link rel="stylesheet" href="css/unicorn.main.css" />	
+        <link rel="stylesheet" href="css/header.css" />	
+        <script src="js/nav.js"></script>
+    </head>
+	<body>
+		<div id="navmenu" >
+            <ul class="menu nav top">
+                <li style="margin-left:200px" ><a href="index.html">首页</a></li>
+                <li class="li-active"><a href="counter.html">柜台</a></li>
+                <li ><a href="goods_add.html">仓库</a>
+                    <ul class="sub-menu">
+                        <li ><a href="goods_add.html">添加商品</a></li>
+                        <li ><a href="goods_select.html">查询商品</a></li>
+                    </ul>
+                </li>
+                <li><a href="member_select.html">会员</a>
+                    <ul class="sub-menu">
+                        <li ><a href="member_add.html">添加会员</a></li>
+                        <li ><a href="member_select.html">查询会员</a></li>
+                    </ul>
+                </li>
+                <li id="menu-item-47"><a href="#">销售</a></li>
+                 <li><a href="purchase_add.html">账单</a>
+                    <ul class="sub-menu">
+                        <li ><a href="purchase_add.html">添加进货单</a></li>
+                        <li ><a href="purchase_select.html">查询进货单</a></li>
+                        <li ><a href="owe_add.html">添加欠货单</a></li>
+                        <li ><a href="owe_select.html">查询欠货单</a></li>
+                    </ul>
+                </li>
+                 <li id="menu-item-47"><a href="tool.html">工具</a></li>
+                <li id="menu-item-47"><a href="#">退出</a></li>                                      
+            </ul>
+        </div>
+		<div class="content">
+			
+        <div style=" margin-top:100px; text-align: left; min-width:300px !important" >
+            <div class="bs-docs-example">
+            <div class="tabbable">
+              <ul class="nav nav-tabs">
+                <li class="active"><a href="#lA" data-toggle="tab">会员</a></li>
+                <li><a href="#lB" data-toggle="tab" >非会员</a></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="lA">
+					<div class="widget-box" >
+                <div class="widget-title">
+                    <span class="icon">
+                        <i class="icon-plus-sign"></i>									
+                    </span>
+                    <h5>会员交易</h5>
+                </div>
+                <div class="widget-content nopadding">
+                    <form class="form-horizontal" method="post" action="#" name="number_validate" />
+                        <div class="control-group">
+                            <label class="control-label">会员编号：</label>
+                            <div class="controls">
+                                <input type="text"  class="input-a" id="min" />
+                            </div>
+                        </div>
+                        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;选择购买物品：</label><br/>					
+                                    
+          					<div class="tabbable  ">
+              <ul class="nav nav-tabs">
+                <li class="active"><a href="#2A" data-toggle="tab">分类1</a></li>
+                <li><a href="#2B" data-toggle="tab" >分类2</a></li>
+                <li><a href="#2C" data-toggle="tab">分类3</a></li>
+                <li><a href="#2D" data-toggle="tab">分类4</a></li>
+                <li><a href="#2E" data-toggle="tab">分类5</a></li>
+                
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="2A">
+					<div class="my_ul" >
+                        <ul>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品1
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品132
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品123
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品241
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品2321
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品3221
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品34241
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品3431
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品1
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品1
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品1
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品1
+                              </label>
+                          </li>
+                       </ul>
+              
+            </div>
+                </div>
+                <div class="tab-pane" id="2B">
+                	<div class="my_ul" >
+                        <ul>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品1
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品132
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品123
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品241
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品2321
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品3221
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品34241
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品3431
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品1
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品1
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品1
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品1
+                              </label>
+                          </li>
+                       </ul>
+              
+            </div>
+                </div>
+                <div class="tab-pane" id="2C">
+                    <div class="my_ul" >
+                            <ul>
+                              <li>
+                                  <label class="checkbox inline">
+                                    <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品1
+                                  </label>
+                              </li>
+                              <li>
+                                  <label class="checkbox inline">
+                                    <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品132
+                                  </label>
+                              </li>
+                              <li>
+                                  <label class="checkbox inline">
+                                    <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品123
+                                  </label>
+                              </li>
+                              <li>
+                                  <label class="checkbox inline">
+                                    <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品241
+                                  </label>
+                              </li>
+                              <li>
+                                  <label class="checkbox inline">
+                                    <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品2321
+                                  </label>
+                              </li>
+                              <li>
+                                  <label class="checkbox inline">
+                                    <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品3221
+                                  </label>
+                              </li>
+                              <li>
+                                  <label class="checkbox inline">
+                                    <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品34241
+                                  </label>
+                              </li>
+                              <li>
+                                  <label class="checkbox inline">
+                                    <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品3431
+                                  </label>
+                              </li>
+                              <li>
+                                  <label class="checkbox inline">
+                                    <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品1
+                                  </label>
+                              </li>
+                              <li>
+                                  <label class="checkbox inline">
+                                    <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品1
+                                  </label>
+                              </li>
+                              <li>
+                                  <label class="checkbox inline">
+                                    <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品1
+                                  </label>
+                              </li>
+                              <li>
+                                  <label class="checkbox inline">
+                                    <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品1
+                                  </label>
+                              </li>
+                           </ul>
+                  
+                </div>
+                </div>
+                <div class="tab-pane" id="2D">
+                  	<div class="my_ul" >
+                        <ul>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品1
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品132
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品123
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品241
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品2321
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品3221
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品34241
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品3431
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品1
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品1
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品1
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品1
+                              </label>
+                          </li>
+                       </ul>
+              
+            </div>
+                </div>
+                <div class="tab-pane" id="2E">
+                  	<div class="my_ul" >
+                        <ul>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品1
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品132
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品123
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品241
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品2321
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品3221
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品34241
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品3431
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品1
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品1
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品1
+                              </label>
+                          </li>
+                          <li>
+                              <label class="checkbox inline">
+                                <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品1
+                              </label>
+                          </li>
+                       </ul>
+              
+            </div>
+               </div>
+              </div>
+            </div>
+                                         
+                             <br/>
+                             <br/>   
+                        <a href="trade_confirmvip.html"  class="btn btn-primary">确认结算</a>
+                        
+                    </form>
+                </div>               
+            </div>
+                </div>
+                <div class="tab-pane" id="lB">
+                  <div class="widget-box" >
+                <div class="widget-title">
+                    <span class="icon">
+                        <i class="icon-plus-sign"></i>									
+                    </span>
+                    <h5>非会员交易</h5>
+                </div>
+                <div class="widget-content nopadding">
+                    <form class="form-horizontal" method="post" action="#" name="number_validate" />
+                        <label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;选择购买物品：</label>
+                        <!-- 收缩div 生活用品-->
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                                   生活用品
+                                </a>
+                            </div>
+                            <div id="collapseOne" class="accordion-body collapse in">
+                                <div class="accordion-inner"> 
+                                    <table class="table table-hover">
+                                        <tr>
+                                            <td> 
+                                                <label class="checkbox inline"  style="width:110px">
+                                                        商品
+                                                </label>
+                                            </td>  
+                                             <td> 
+                                                <label class="checkbox inline">
+                                                         价格
+                                                </label>
+                                            </td>
+                                             <td> 
+                                                <label class="checkbox inline">
+                                                         会员价格
+                                                </label>
+                                            </td>
+                                            <td> 
+                                                <label class="checkbox inline">
+                                                         购买数量
+                                                </label>
+                                            </td>    
+                                        </tr>
+  										<tr>
+                                        	<td> 
+                                             	<label class="checkbox inline">
+                                                 <input type="checkbox" id="inlineCheckbox1" name="listCheck" value="1">商品1
+                                                </label>
+                                        	</td>  
+                                        	<td> 
+                                             	<label class="checkbox inline">
+                                                 	18
+                                                </label>
+                                        	</td>  
+                                        	<td> 
+                                             	<label class="checkbox inline">
+                                                 	15
+                                                </label>
+                                        	</td>  
+                                        	<td> 
+                                             	<label class="checkbox inline">
+                                                 	<input type="text" name="number"  class=" input-small" value="1" />
+                                                </label>
+                                        	</td>  
+                                        </tr>                                                                                 
+                                    </table>
+
+                                </div>
+                            </div>
+                         </div>
+                         <!-- 收缩div 生活食品-->
+                       
+                                            
+              			
+                            <a href="trade_confirm.html"  class="btn btn-primary">确认结算</a>
+                        
+                    </form>
+                </div>               
+            </div>
+                </div>
+              </div>
+            </div> <!-- /tabbable -->
+          </div>      
+            
+        </div>
+	</div>
+        <script src="js/jquery.min.js"></script>        
+        <script src="js/bootstrap.min.js"></script>
+	</body>
+     
+</html>

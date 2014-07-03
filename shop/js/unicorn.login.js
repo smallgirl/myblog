@@ -42,3 +42,23 @@ $(document).ready(function(){
         
     }
 });
+//验证管理员信息
+function checkLogin() {
+	var pname=document.getElementById("admin_name").value;
+	var psw=document.getElementById("admin_psw").value;
+	if(pname.length<6 ||psw.length<6) {
+		$('#admin_error').modal('show');
+	return false;
+	}
+}
+//正则表达式限制用管理员户名和密码输入
+$(function () {
+	$('#admin_name').keyup(function () {
+		//限制只能是数字
+		this.value = this.value.replace(/[^a-zA-Z\d]/g,'');
+	})
+	$('#admin_psw').keyup(function () {
+		//限制只能是数字或字母输入
+		this.value = this.value.replace(/[^a-zA-Z\d]/g,'');
+	})
+});

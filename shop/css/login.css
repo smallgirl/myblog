@@ -78,21 +78,16 @@ body {
 	opacity: 0;
     display:none;
 }
-
-#loginbox form#recoverform .form-actions {
-    margin-top: 27px;
-}
-
 #loginbox form#recoverform .control-group {
-	margin: 23px 0;
+	margin: 25px 0;
 }
 .input-info{
 	margin-top:20px ;
 	margin-bottom:20px;
 	}
 .email_address{
-	margin-top:20px ;
-	margin-bottom:60px;
+	
+	margin-bottom:80px;
 	}
 .form-vertical, .form-actions {
     margin-bottom: 0;

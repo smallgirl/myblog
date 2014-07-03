@@ -10,7 +10,7 @@ a{ outline:none;text-decoration:none;}
 .li-active{
 	background:#007ead !important;
 }
-
+.my_ul ul li{ float: left; display: inline; margin-right: 15px; margin-top: 5px; white-space:nowrap; width:100px}
 body {margin:0 auto;color:#131313; background-color:#fafafa; text-align:center}
 #navmenu{margin:0 auto;
 	background:#0095cd;
@@ -19,6 +19,7 @@ body {margin:0 auto;color:#131313; background-color:#fafafa; text-align:center}
 	position: fixed;
 	left: 0px;
 	top: 0px;
+	opacity:.99;filter:alpha(opacity=100)
 }
 #navmenu ul {float:left;margin:0;padding:0;}
 #navmenu ul li {float:left;height:45px;line-height:45px;position:relative;padding:0 0 0 2px;list-style:none;}
