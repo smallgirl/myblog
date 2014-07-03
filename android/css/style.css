@@ -474,6 +474,7 @@ textarea
 	z-index: 10;
 	background-color: #363842;
 	color: #545766;
+	margin-top:20px;
 }
 #top-footer .widget {
 	margin-bottom: 0;
@@ -503,9 +504,7 @@ textarea
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-.footer p{
-	padding:1em 0em;
-}
+
 .footer a:hover {
 	color: #fff;
 }
@@ -522,7 +521,7 @@ textarea
 	font-size:1em;
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
-	padding: 1.5em 0em;
+	
 }
 .copy p a{
 	color:#55C1E5;
