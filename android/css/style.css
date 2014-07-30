@@ -7,7 +7,7 @@ blockquote,q{quotes:none;}
 blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
 table{border-collapse:collapse;border-spacing:0;}
 /* start editing from here */
-a{text-decoration:none;}
+a{text-decoration:none;color:#72ACE3}
 .txt-rt{text-align:right;}/* text align right */
 .txt-lt{text-align:left;}/* text align left */
 .txt-center{text-align:center;}/* text align center */
@@ -385,7 +385,7 @@ textarea
 }
 .send a
 {
-	color:#fff;
+	
 	background: #FC685C;
 	padding: 1em 3em;
 	border-radius: 5px;
