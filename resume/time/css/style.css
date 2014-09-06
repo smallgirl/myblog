@@ -258,3 +258,6 @@ hr {
 	color: #ec6a13;
 	font-size: 13px!important;
 }
+.footer{
+	text-align:center;
+	background: #3a3c48 url("../images/log/content-bg.png");}
