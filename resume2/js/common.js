@@ -206,7 +206,7 @@ var highline={
 		switch(num){
 			case 1:
 				//this.aniCom_MtopOpacity($("#videopar"),"-512px","1",200);
-				$("#videopar").addClass("videopar_ani");
+				
 			break;
 	
 			case 2:
@@ -222,7 +222,7 @@ var highline={
 		switch(num){
 			case 1:
 				//this.aniCom_MtopOpacity($("#videopar"),"-300px","0",400);
-				$("#videopar").removeClass("videopar_ani");
+				
 			break;
 			case 2:
 			
